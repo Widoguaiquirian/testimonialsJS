@@ -1,0 +1,130 @@
+/* Created XX April XXXX
+Last update April XX:  */
+
+:root {
+  --zI-1: 1;
+  --zI-2: 2;
+  --zI-3: 3;
+  --zI-4: 4;
+  --zI-5: 5;
+
+  /* --z-nav: var(--zI-2); 100 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--- General ---*/
+
+html {
+  font-size: 62.5%;
+
+  background-image: linear-gradient(19deg, #60b4c7 0%, #c18bda 100%);
+}
+
+body {
+  align-items: center;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  justify-content: center;
+  line-height: 1.4;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(46, 46, 46);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.testimonial-container {
+  background-color: #476ce4;
+  color: white;
+  border-radius: 10px;
+  max-width: 768px;
+  margin: 2rem auto;
+  padding: 5rem 8rem;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 2.8rem;
+  top: 70px;
+  position: absolute;
+}
+
+.fa-quote-right {
+  left: 40px;
+}
+
+.fa-quote-left {
+  right: 40px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+.user-details {
+  margin-left: 1rem;
+}
+
+.username {
+  margin: 0;
+}
+
+.role {
+  font-weight: normal;
+  margin: 0.5rem 0;
+}
+
+.progress-bar {
+  background-color: white;
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 1rem 2rem;
+  }
+  .fa-quote {
+    display: none;
+  }
+}
